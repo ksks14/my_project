@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>违规图片</title>
+
+    <link href="/static/css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="/static/font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+    <link href="/static/js/plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css?v=2.2.0" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/plugins/fancybox/facybox.css" />
+
+    <style>
+        .dangerImg {
+            border: 4px solid red;
+            border-radius: 5px;
+        }
+
+        img {
+            margin-left: 5px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .imginfo {
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body class="top-navigation">
+
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom white-bg">
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar"
+                            data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                            <i class="fa fa-reorder"></i>
+                        </button>
+                        <a href="index.html#" class="navbar-brand">SHelmet</a>
+                    </div>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav">
+
+                            <li class="">
+                                <a aria-expanded="false" role="navigation" href={% url 'index' %} class=""> 首页
+                                </a>
+
+                            </li>
+                            <li class="">
+                                <a aria-expanded="false" role="navigation" href="demonstration.html" class=""> 正确佩戴示范
+                                </a>
+
+                            </li>
+
+                            <li class="active">
+                                <a aria-expanded="false" role="navigation" href="basic_gallery.html" class=""> 违规图片
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                        <ul class="nav navbar-top-links navbar-right">
+                            <li>
+                                <a href="profile.html">
+                                    <i class="fa fa-user"></i> 个人资料
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="login.html">
+                                    <i class="fa fa-sign-out"></i> 退出
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </nav>
+            </div>
+
+            <div id="page-wrapper" class="gray-bg dashbard-1">
+                <!-- <div class="row border-bottom">
+                    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    </nav>
+                </div> -->
+                <div class="ibox-content">
+
+                    <form class="form-horizontal m-t">
+
+                        <div class="form-group">
+       
+                                <label class="col-sm-2 control-label">按日期查询:</label>
+
+                            <div class="col-sm-10">
+                                <input  placeholder="开始日期" class="form-control layer-date" id="start" style="margin-top: -8px;">
+                                <input  placeholder="结束日期" class="form-control layer-date" id="end" style="margin-top: -8px;">
+
+
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fa fa-check"></i>&nbsp;查询
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+
+                <div class="wrapper wrapper-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- <div class="ibox float-e-margins"> -->
+
+                            <div class="ibox-content">
+
+                                <a data-fancybox="gallery" data-src="img/3.jpg" data-caption=" ">
+                                    <!-- 信息 -->
+                                    <span class="imginfo">2021年10月24日</span>
+
+                                    <img class="dangerImg" src="/static/img/3.jpg" width="400" height="300"
+                                        title="2021年10月24日" />
+                                </a>
+
+                                <a data-fancybox="gallery" data-src="img/2.jpg" data-caption=" ">
+                                    <img src="/static/img/2.jpg" width="400" height="300" title="2021年10月24日" />
+                                </a>
+                                <a data-fancybox="gallery" data-src="img/1.jpg" data-caption=" ">
+                                    <img src="/static/img/1.jpg" width="400" height="300" title="2021年10月24日" />
+                                </a>
+                                <a data-fancybox="gallery" data-src="img/7.jpg" data-caption=" ">
+                                    <img src="/static/img/7.jpg" width="400" height="300" title="2021年10月24日" />
+                                </a>
+                                <a data-fancybox="gallery" data-src="img/5.jpg" data-caption=" ">
+                                    <img src="/static/img/5.jpg" width="400" height="300" title="2021年10月24日" />
+                                </a>
+                                <a data-fancybox="gallery" data-src="img/6.jpg" data-caption=" ">
+                                    <img src="/static/img/6.jpg" width="400" height="300" title="2021年10月24日" />
+                                </a>
+                                <a data-fancybox="gallery" data-src="img/12.jpg" data-caption=" ">
+                                    <img src="/static/img/12.jpg" width="400" height="300" title="2021年10月24日" />
+                                </a>
+                                <a data-fancybox="gallery" data-src="img/13.jpg" data-caption=" ">
+                                    <img src="/static/img/13.jpg" width="400" height="300" title="2021年10月24日" />
+                                </a>
+
+                            </div>
+                            <!-- </div> -->
+                        </div>
+
+                    </div>
+                    <nav aria-label="Page navigation" style="text-align: center;">
+                        <ul class="pagination pagination-lg">
+                            <li class="disabled">
+                                <span>
+                                    <span aria-hidden="true">&laquo;</span>
+                                </span>
+                            </li>
+                            <li class="active">
+                                <span>1 <span class="sr-only">(current)</span></span>
+                            </li>
+                            <li class="">
+                                <span>2 <span class="sr-only">(current)</span></span>
+                            </li>
+                            <li class="">
+                                <span>3 <span class="sr-only">(current)</span></span>
+                            </li>
+                            <li class="">
+                                <span>4 <span class="sr-only">(current)</span></span>
+                            </li>
+                            <li class="">
+                                <span>5 <span class="sr-only">(current)</span></span>
+                            </li>
+
+                            <li class="disabled">
+                                <span>
+                                    <span aria-hidden="true">&raquo;</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="/static/js/jquery-2.1.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js?v=3.4.0"></script>
+    <script src="/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- layerDate plugin javascript -->
+    <script src="/static/js/plugins/layer/laydate/laydate.js"></script>
+
+    <!-- Peity -->
+    <script src="/static/js/plugins/peity/jquery.peity.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/static/js/hplus.js?v=2.2.0"></script>
+    <script src="/static/js/plugins/pace/pace.min.js"></script>
+    <script src="/static/js/plugins/validate/jquery.validate.min.js"></script>
+
+    <!-- Fancy box -->
+    <script src="/static/js/plugins/fancybox/jquery.fancybox.js"></script>
+    <script src="/static/js/plugins/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        //日期范围限制
+        var start = {
+            elem: '#start',
+            format: 'YYYY/MM/DD hh:mm:ss',
+            min: '2000-01-01 00:00:00',
+            max: '2099-06-16 23:59:59', //最大日期
+            istime: true,
+            istoday: false,
+            choose: function (datas) {
+                end.min = datas; //开始日选好后，重置结束日的最小日期
+                end.start = datas //将结束日的初始值设定为开始日
+            }
+        };
+        var end = {
+            elem: '#end',
+            format: 'YYYY/MM/DD hh:mm:ss',
+            min: '2000-01-01 00:00:00',
+            max: laydate.now(),
+            istime: true,
+            istoday: false,
+            choose: function (datas) {
+                start.max = datas; //结束日选好后，重置开始日的最大日期
+            }
+        };
+        laydate(start);
+        laydate(end);
+    </script>
+
+
+</body>
+
+</html>
