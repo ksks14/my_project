@@ -8,4 +8,7 @@
 *.mp4
 *.csv
 *.rar
-*.jpeg
+*.jpeG
+
+# 该文件用于测试笔记，不提交
+demo.py
