@@ -14,3 +14,7 @@
 
 # 该文件用于测试笔记，不提交
 demo.py
+
+
+# set not ignore
+!img.png
