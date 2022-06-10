@@ -18,3 +18,4 @@ demo.py
 
 # set not ignore
 !img.png
+!爬虫/线性爬取m3u8文件/img_1.png
