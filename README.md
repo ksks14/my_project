@@ -1,3 +1,7 @@
+## 算法思路训练
+
+[传送门](https://github.com/ksks14/my_project/tree/main/%E7%AE%97%E6%B3%95#readme)
+
 ## 图像数据处理
 
 该类方法主要用于前后端图像传输，场景如下：
