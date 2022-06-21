@@ -1,3 +1,5 @@
+[![OSCS Status](https://www.oscs1024.com/platform/badge/ksks14/my_project.svg?size=large)](https://www.oscs1024.com/project/ksks14/my_project?ref=badge_large)
+
 ## 算法思路训练
 
 [传送门](https://github.com/ksks14/my_project/tree/main/%E7%AE%97%E6%B3%95#readme)
