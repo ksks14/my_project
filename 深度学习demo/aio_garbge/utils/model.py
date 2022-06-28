@@ -21,13 +21,15 @@ BASE_DIR = pathlib.Path(__file__).parent
 model_path = str(BASE_DIR) + '/model/model_best_checkpoint_resnet101.pth.tar'
 lable_path = str(BASE_DIR) + '/model/dir_label.txt'
 
-max_workers = 5
+# max_workers = 5
+# set the max workers
+max_workers = 1
 
 # predefine the model
 _model = None
 _labels = None
 
-environ["CUDA_VISIBLE_DEVICES"] = "0"
+# environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
 def softmax(x):
@@ -81,7 +83,9 @@ def load_my_model(model_path):
     fc_inputs = model.fc.in_features
     model.fc = Linear(fc_inputs, 214)
     # load to cuda()
-    model = model.cuda()
+    # model = model.cuda()
+    # trans to cpu
+    model = model
     # 加载训练好的模型
     checkpoint = load(model_path)
     # load static
@@ -180,7 +184,9 @@ def predict_garbge(data: bytes, model=None):
     """
     # get the img
     img = load_img_byte(data)
-    image = img.cuda()
+    # image = img.cuda()
+    # trans to cpu
+    image = img
     if not model:
         model = _model
     pred = model(image)

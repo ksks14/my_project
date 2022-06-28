@@ -1,4 +1,4 @@
-from view import predict
+from system.view import predict
 
 
 def setup_routes(app=None):
