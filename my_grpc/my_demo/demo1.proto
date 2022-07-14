@@ -1,0 +1,17 @@
+// 定义语法
+syntax = "proto3";
+
+// 定义请求消息与响应消息
+message request{
+  int64 data = 10;
+}
+
+message response{
+  int64 res = 20;
+
+}
+
+// 定义服务
+service demo1_service{
+  rpc hello (request) returns (response) {}
+}

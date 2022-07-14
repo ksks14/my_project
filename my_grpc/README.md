@@ -1,3 +1,9 @@
+# 协议缓冲区
+
+
+
+
+
 # grpc
 
 **首先grpc是一个远程调用系统，它是一个rpc框架**
@@ -18,3 +24,20 @@ rpc即(remote procedure call protocol)远程调用协议，客户端调用存储
 存在一个存根，它提供与服务器相同的方法。
 
 grpc客户端和服务器在各种环境中，运行和相互通信，并且可以使用任何grpc支持的语言编写，
+
+# 库的支持
+
+1. concurrent.futures 为异步执行对象提供了高层接口。
+
+    可以调用如下两种方法进行异步编程
+    
+    ThreadPoolExecutor: 多线程
+    
+    ProcessPoolExecutor: 多进程
+    
+    该模块包含两大类
+    
+    executor: 执行器对象，管理工作池
+    
+    future: 管理计算的结果
+2. 

@@ -22,7 +22,7 @@ option objc_class_prefix = "HLW";
 package helloworld;
 
 // The greeting service definition.
-service Greeter {
+service Greeter { // 定义一个服务，接受一个HelloRequest并返回一个HelloReply，这俩方法在下面定义
   // Sends a greeting
   rpc SayHello (HelloRequest) returns (HelloReply) {}
   // add anther greeting
