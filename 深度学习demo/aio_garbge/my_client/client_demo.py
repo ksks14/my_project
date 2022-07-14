@@ -22,7 +22,7 @@ async def main():
     """
     file_path = '../data/img/test_tra_1.png'
     async with aiohttp.ClientSession() as session:
-        response_json = await post_img(session, 'http://127.0.0.1:8080/predict', file_path=file_path)
+        response_json = await post_img(session, 'http://175.178.65.191:8083/predict', file_path=file_path)
         print('res: ', response_json)
 
 if __name__ == '__main__':
